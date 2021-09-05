@@ -30,8 +30,10 @@ export default function Layout({ children, home }) {
           <>
             <Image
               src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              className={`${styles.headerImage}${utilStyles.borderCircle}`}
               alt={name}
+              width={400}
+              height={400}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -41,8 +43,10 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  className={` ${styles.headerHomeImage}${utilStyles.borderCircle}`}
                   alt={name}
+                  width={400}
+                  height={400}
                 />
               </a>
             </Link>
